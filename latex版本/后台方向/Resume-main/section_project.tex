@@ -1,0 +1,53 @@
+%======================================================================
+\sectionTitle{项目经历}{\faListUl}
+%======================================================================
+\begin{experiences}
+    \experience%
+    [2017.10]
+    {2018.9}%
+    {\textbf{核心成员 @ 哨兵机器人}}%
+    [
+    全国大学生机器人大赛参赛作品，自动识别并跟踪敌方机器人的装甲板并进行精准射击。
+        \begin{itemize}
+            \item {编写哨兵嵌入式软件，包括运动射击策略、底层驱动、系统通信等工作；}
+            \item {哨兵电路设计与调试，并负责传感器系统设计；}
+            \item {编写串级PID算法控制电机并调参，控制精度在0.05度左右；}
+            \item {编写卡尔曼滤波算法，融合视觉系统传递过来的敌方装甲板位置信息与云台当前位置信息，使哨兵云台能够平稳运动、自动瞄准并跟踪敌方装甲板，运动目标击中率达到30\%；}
+        \end{itemize}
+    ]
+    [C/C++, STM32, kalman filter, PID, Git]
+    \separator{0.5ex}
+
+    \experience%
+    [2020.10]
+    {2021.6}%
+    {\textbf{项目负责人 @ 基于EMI信号的电源质量监测系统设计 }}%
+    [
+    在电子系统电源主干路上采集并分类电磁干扰信号(EMI)，对支线电路板的工作状态进行监测。
+        \begin{itemize}
+            \item {搭建改进的轻量化神经网络 SqueezeNet 模型，并用公开数据集进行初步验证和训练；}
+            \item {仿真并对比FFT和同步压缩小波变化对数据特征增强的性能，最终选择FFT做数据变换；}
+            \item {系统硬件电路设计与调试，主要是高速 ADC 采集电路和运算平台(FPGA+STM32F7)；}
+            \item {搭建实验平台，采集实际数据并制成数据集，训练 SequeezeNet ；}
+            \item {在 FPGA 中实现 ADC 采集和数据预处理操作，并将其处理后的数据发送至STM32；}
+            \item {在 STM32 中部署轻量化 SqueezeNet 模型，分类准确率达到98\%。}
+        \end{itemize}]
+    [Python, C/C++, Keras, SequeezeNet, FPGA, Git]
+    
+%    \separator{0.5ex}
+    
+%    \experience%
+%    [2021.1]
+%    {2021.4}%
+%    {\textbf{自学项目 @ Web Server }}%
+%    [
+%    学习《高性能服务器编程》及springsnail源码后，使用C++11编写的可处理高并发I/O请求的Web服务器。
+%    \begin{itemize}
+%    	\item {使用epoll边沿触发的IO多路复用技术，非阻塞IO，使用Reactor模式；}
+%    	\item {使用多线程充分利用多核CPU，并使用线程池避免线程频繁创建、销毁的开销；}
+%    	\item {使用状态机解析HTTP请求报文，支持解析GET和POST请求；}
+%    	\item {实现同步/异步日志系统，记录服务器运行状态；}
+%    \end{itemize}]
+%    [C++, Linux, thread pool, Git]
+    
+\end{experiences}
