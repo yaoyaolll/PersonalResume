@@ -9,9 +9,10 @@
 	[
 	通过搭建 Tencent OS 内核宕机查错的自动分析工具 t-crash 来快速定位引起内核崩溃的问题。
 	\begin{itemize}
-		\item {熟悉业务代码、公司的开发测试流程以及测试环境，并负责 t-crash 中子模块 mce 的检测与代码编写；}
+		\item {熟悉业务代码、开发测试流程以及测试环境，并负责 t-crash 中子模块 mce 的检测与代码编写；}
 		\item {适配 t-crash 至 tlinux kernel 3，修复遗留BUG，并编写脚本对其进行压测；}
-		\item {基于Redis和MySQL编写完整后台程序，接收并解析服务器的宕机诊断信息，进行后续处理和入库，将诊断结果通过邮件发送给运维人员，目前已经在内部使用；}
+		\item {分析业务需求，编写完整后台程序，接收并解析服务器的宕机诊断信息，进行后续处理和入库，将诊断结果放至部门网站同时通过邮件发送给运维人员，目前已经在内部使用；}
+		\item {根据业务特点，将CrashData、Diagnose、cmdbData、CrashDB、TapdData、MailData等主要流程封装成类，提高了代码的复用性以及后续新增子宕机问题的可扩展性；}
 	\end{itemize}
 	]
 	[C, Python, Shell, Git, Redis, MySQL]
