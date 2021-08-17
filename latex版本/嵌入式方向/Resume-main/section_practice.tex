@@ -5,16 +5,16 @@
 	\experience%
 	[2021.6]
 	{至今}%
-	{\textbf{腾讯科技(深圳)有限公司 @ TEG/云架构平台部/操作系统组}}%
+	{\textbf{腾讯科技(深圳)有限公司 @ TEG/云架构平台部/操作系统组/后台开发实习生}}%
 	[
 	通过搭建 Tencent OS 内核宕机查错的自动分析工具 t-crash 来快速定位引起内核崩溃的问题。
 	\begin{itemize}
-		\item {编写 mce-inject 工具，向内核中注入 mce 错误以引发内核崩溃，进而生成 vmcore ；}
-		\item {编写 t-crash 中的 mce 模块来检测内核是否因发生mce 错误而崩溃并定位错误细节原因；}
-		\item {适配 t-crash 至 tlinux kernel 3，并编写脚本对其进行压测；}
-		\item {编写后台程序，对宕机机器上报的诊断报告进行处理并将其提交至运维人员和部门网站；}
+		\item {熟悉业务代码、开发测试流程以及测试环境，并负责 t-crash 中子模块 mce 的检测与代码编写；}
+		\item {适配 t-crash 至 tlinux kernel 3，修复遗留BUG，并编写脚本对其进行压测；}
+		\item {分析业务需求，编写完整后台程序，接收并解析服务器的宕机诊断信息，进行后续处理和入库，将诊断结果放至部门网站同时通过邮件发送给运维人员，目前已经在内部使用；}
+		\item {根据业务特点，将CrashData、Diagnose、cmdbData、CrashDB、TapdData、MailData等主要流程封装成类，提高了代码的复用性以及后续新增子宕机问题的可扩展性；}
 	\end{itemize}
 	]
-	[C, Python, Shell, Linux, Git, Redis, MySQL]
+	[C, Python, Shell, Git, Redis, MySQL]
 	
 \end{experiences}
